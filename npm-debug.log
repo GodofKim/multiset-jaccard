@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v7.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/GodofKim/React/multiset-jaccard',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/GodofKim/.npm/multiset-jaccard/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/GodofKim/.npm correctMkdir not in flight; initializing
+10 info lifecycle multiset-jaccard@0.1.0~prepublish: multiset-jaccard@0.1.0
+11 silly lifecycle multiset-jaccard@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/GodofKim/.npm/multiset-jaccard/0.1.0/package.tgz',
+12 verbose tar pack   '/Users/GodofKim/React/multiset-jaccard' ]
+13 verbose tarball /Users/GodofKim/.npm/multiset-jaccard/0.1.0/package.tgz
+14 verbose folder /Users/GodofKim/React/multiset-jaccard
+15 verbose addLocalTarball adding from inside cache /Users/GodofKim/.npm/multiset-jaccard/0.1.0/package.tgz
+16 verbose correctMkdir /Users/GodofKim/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd multiset-jaccard@0.1.0
+18 verbose afterAdd /Users/GodofKim/.npm/multiset-jaccard/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/GodofKim/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/GodofKim/.npm/multiset-jaccard/0.1.0/package/package.json written
+21 silly publish { name: 'multiset-jaccard',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'A Jaccard index calculator supporting multi-set.',
+21 silly publish   author: { name: 'godofkim', email: 'kjh.original@gmail.com' },
+21 silly publish   contributors: [],
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/GodofKim/multiset-jaccard.git' },
+21 silly publish   bugs: { url: 'https://github.com/GodofKim/multiset-jaccard/issues' },
+21 silly publish   main: './lib/multiset-jaccard',
+21 silly publish   dependencies: {},
+21 silly publish   devDependencies: {},
+21 silly publish   scripts: {},
+21 silly publish   engines: { node: '>= 0.4.0' },
+21 silly publish   licenses: [ { type: 'MIT', url: 'http://www.opensource.org/licenses/MIT' } ],
+21 silly publish   keywords:
+21 silly publish    [ 'jaccard',
+21 silly publish      'multiset',
+21 silly publish      'jaccard index',
+21 silly publish      'index',
+21 silly publish      'multiset jaccard',
+21 silly publish      'set' ],
+21 silly publish   readme: '#Multiset-Jaccard\n\nA Jaccard Index calculator supporting multi-set\n\n##Installation\n```\n  $ npm install --save multiset-jaccard\n```\n\n##How to use\n\nGet Jaccard-index between two arrays\n```javascript\n  var jaccard = require(\'multiset-jaccard\');\n\n  var A = ["Apple","Banana","Apple","Cherry","Mango"]; // multi-set\n  var B = ["Apple","Cherry","Melon","Orange"];\n\n  var index = jaccard.index(A, B);\n  /*\n    result : 0.2857142857142857\n  */\n```\n\nIf you want to make `Counter`, make instances like this.\n```javascript\n  var A = ["Apple","Banana","Apple","Cherry","Mango"];\n  var A_Counter = new jaccard.Counter(A);\n  /*\n    A_Counter.elements : {{"Apple" : 2}, {"Banana" : 1}, {"Cherry" : 1}, {"Mango" : 1}}\n    A_Counter.keys() returns ["Apple","Banana","Cheery","Mango"]\n    A_Counter.values() returns [2,1,1,1]\n  */\n\n```\nAnd you can get `sum of Counters` and `product of Counters` like this.\n```javascript\n  var A = ["Apple","Banana","Apple","Cherry","Mango"]; // multi-set\n  var B = ["Apple","Cherry","Melon","Orange"];\n  var A_Counter = new jaccard.Counter(A);\n  var B_Counter = new jaccard.Counter(B);\n\n  var sum = jaccard.sum(A_Counter, B_Counter);\n  var product = jaccard.product(A_Counter, B_Counter);\n\n  /*\n    sum : {{"Apple": 2}, {"Banana": 1}, {"Cherry": 1}, {"Mango": 1}, {"Melon": 1}, {"Mango": 1}}\n    product : {{"Apple": 1}, {"Cherry": 1"}}\n  */\n\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'f47b1107f1596599761739c443c550e682f874da',
+21 silly publish   homepage: 'https://github.com/GodofKim/multiset-jaccard#readme',
+21 silly publish   _id: 'multiset-jaccard@0.1.0',
+21 silly publish   _shasum: 'a8d63c8ea4db0d0e20a41a79360ea07a11259566',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name multiset-jaccard
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'multiset-jaccard',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'multiset-jaccard',
+26 silly mapToRegistry   name: 'multiset-jaccard',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/multiset-jaccard
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/GodofKim/.npm/multiset-jaccard/0.1.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/multiset-jaccard
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 14:45:25
+33 verbose request using bearer token for auth
+34 verbose request id baae71b09cb9650d
+35 http request PUT https://registry.npmjs.org/multiset-jaccard
+36 http 403 https://registry.npmjs.org/multiset-jaccard
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 11 Nov 2016 05:45:29 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-nrt6126-NRT',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1478843128.875806,VS0,VE584',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/GodofKim/.npm/registry.npmjs.org/multiset-jaccard on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : multiset-jaccard
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid multiset-jaccard
+43 verbose cwd /Users/GodofKim/React/multiset-jaccard
+44 error Darwin 15.5.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v7.0.0
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 0.1.0." : multiset-jaccard
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
