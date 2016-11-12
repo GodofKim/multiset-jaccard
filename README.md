@@ -49,3 +49,9 @@ And you can get `sum of Counters` and `product of Counters` like this.
   */
 
 ```
+
+You can get same result by putting arrays. (0.1.2v)
+```javascript
+  var sum = jaccard.sum(A, B);
+  var product = jaccard.product(A, B);
+```
