@@ -20,6 +20,14 @@ Get Jaccard-index between two arrays
   /*
     result : 0.2857142857142857
   */
+  
+  // Below is asynchronous method
+  jaccard.index(A, B, function (err, index) {
+    console.log("result : ", index);
+  });
+  /*
+    result : 0.2857142857132857
+  */
 ```
 
 If you want to make `Counter`, make instances like this.
