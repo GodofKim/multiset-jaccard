@@ -1,6 +1,6 @@
 {
   "name": "multiset-jaccard",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A Jaccard index calculator supporting multi-set.",
   "author": { "name": "godofkim", "email": "kjh.original@gmail.com" },
   "contributors": [
@@ -14,6 +14,7 @@
   },
   "main": "./lib/multiset-jaccard",
   "dependencies": {
+    "async": "^2.1.2"
   },
   "devDependencies": {
   },
